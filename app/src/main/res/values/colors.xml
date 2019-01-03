@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#04676e</color>
+    <color name="colorPrimaryDark">#034b50</color>
+    <color name="colorAccent">#bf6282</color>
+    <color name="colorBackground">#373559</color>
+    <color name="primary_material_light">#266a62</color>
+    <color name="primary_dark_material_light">#1c3b38</color>
+    <color name="text_color_primary">#ddcdd9dc</color>
+    <color name="text_color_secondary">#891e4c51</color>
+    <color name="text_color">#89052629</color>
+    <color name="black">#011212</color>
+    <color name="accent_material_light">#c66a75</color>
+    <color name="windowBackground">#dbe6eeef</color>
+    <color name="cardBackground">#e7ffffff</color>
+</resources>

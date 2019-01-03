@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/action_inbox"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="@string/nav_action_inbox" />
+        <item
+            android:id="@+id/action_draft"
+            android:icon="@drawable/ic_draft_black_24dp"
+            android:title="@string/nav_action_draft" />
+        <item
+            android:id="@+id/action_sent"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="@string/nav_action_sent" />
+        <item
+            android:id="@+id/action_outbox"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="@string/nav_action_outbox" />
+        <item
+            android:id="@+id/action_trash"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="@string/nav_action_trash" />
+
+    </group>
+
+</menu>

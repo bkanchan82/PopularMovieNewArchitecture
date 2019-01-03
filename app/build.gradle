@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "movie.architech.android.com.popularmovienewarchitecture"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$support_lib_version"
+    implementation "com.android.support:design:$support_lib_version"
+    implementation "com.android.support:preference-v7:$support_lib_version"
+    implementation "com.android.support:recyclerview-v7:$support_lib_version"
+    implementation "com.android.support.constraint:constraint-layout:$cons_layout_version"
+    /*Architechture component dependencies*/
+    implementation "android.arch.lifecycle:runtime:$arch_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    annotationProcessor "android.arch.lifecycle:compiler:$arch_version"
+    implementation "android.arch.persistence.room:runtime:$arch_version"
+    annotationProcessor "android.arch.persistence.room:compiler:$arch_version"
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:$arch_version"
+    //Support library depends on this lightweight import
+    implementation "android.arch.lifecycle:runtime:$arch_version"
+    annotationProcessor "android.arch.lifecycle:compiler:$arch_version"
+    implementation "android.arch.paging:runtime:$paging_version"
+    // alternatively - without Android dependencies for testing
+    testImplementation "android.arch.paging:common:$paging_version"
+    testImplementation "junit:junit:$junit_version"
+    // Optional -- Mockito framework
+    testImplementation 'org.mockito:mockito-core:1.10.19'
+    androidTestImplementation "com.android.support.test:runner:$testrunner_version"
+    androidTestImplementation "com.android.support.test:rules:$testrules_version"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$espresso_version"
+    androidTestImplementation "com.android.support.test.espresso:espresso-contrib:$espresso_version"
+
+    androidTestImplementation "com.android.support.test.espresso:espresso-idling-resource:$espresso_version"
+    implementation "com.android.support.test.espresso:espresso-idling-resource:$espresso_version"
+    implementation 'com.squareup.picasso:picasso:2.71828'
+}
